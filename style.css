@@ -304,6 +304,21 @@ nav a {
   text-transform: uppercase;
   font-size: 15px;
 }
+.read-more {
+  background: #fff;
+  border: 1px solid #e0e0e0;
+  color: #666;
+  padding: 7px 20px;
+  border-radius: 2px;
+  font-size: 13px;
+  display: inline-block;
+  float: left;
+  transition: all .25s ease;
+}
+.read-more:hover {
+  color: #000;
+    border: 1px solid #ddd;
+}
 
 .wrapper-footer {
   margin-top: 50px;
