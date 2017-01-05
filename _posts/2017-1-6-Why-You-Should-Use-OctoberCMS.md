@@ -17,9 +17,13 @@ A huge difference between __WordPress__ and __OctoberCMS__ code. If OctoberCMS i
 
 #### Why you should use OctoberCMS?
 1- Built on the best PHP framework.
+
 2- Fully Object Oriented Code.
+
 3- Has a great extendable plugins system.
+
 4- Has two different choices for your front-end programming (Twig, Blade).
+
 5- You don't have to write a lot of code to create CRUD. You even won't write any code to build CRUD ! In just few clicks you will be able to create any number of CRUDs by installing `Rainlab.Builder` plugin.
 
 #### Disadvantages of using OctoberCMS?
@@ -27,8 +31,11 @@ Actually the only one is that you won't like to work on low-quality-code platfor
 
 #### What components are installed with OctoberCMS?
 1- Administrators with a powerful permissions system.
+
 2- Different logs (Access logs, Mail logs etc.)
+
 3- Well-designed backend.
+
 And OctoberCMS backend control panel is available in huge number of languages. Not only English.
 
 #### What plugins I should use first?
