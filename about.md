@@ -10,11 +10,13 @@ I am a programmer who create things for web. Most of my time is spent in front o
 
 I started to dive into this field since the age of ten. I've worked in IT companies in Egypt, Saudi Arabia and Turkey.
 
-You can see my resume [here].
+You can see my resume [here][].
 
 You can contact me using email or send me a tweet.
 
 __My Email__: ErwinChafros@gmail.com
 
 __My Twitter__: @DevEssam
+
+
 [here]: https://drive.google.com/open?id=0B_9nFej-pdfNdGVIa19rWDh0OE0
