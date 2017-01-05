@@ -19,5 +19,3 @@ Finally, I managed to create this simple personal blog after hours of customizin
 Despite I have my own paid host on HostGator but once I saw this service I wanted to create my blog with it so badly!
 
 I'm glad I managed to deal with this great service from __GitHub__.
-
-Wait for my tutorials soon.
