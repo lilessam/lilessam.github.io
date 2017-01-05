@@ -64,7 +64,7 @@ html {
 }
 
 body {
-  background: #eaeaea;
+  background: #fff;
   font: 18px/1.4 Helvetica, Arial, sans-serif;
   color: #333;
 }
@@ -278,16 +278,7 @@ nav a {
     color: #4183C4;
   }
 }
-.post {
-  background: #fff;
-  border: 1px solid #e0e0e0;
-  padding: 10px;
-  margin-bottom: 50px;
-  transition: all .5s ease;
-}
-.post:hover {
-    box-shadow: 1px 1px 5px #ddd, -1px -1px 5px #ddd
-}
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid #eee;
@@ -326,7 +317,7 @@ nav a {
 }
 .read-more:hover {
   color: #000;
-    border: 1px solid #ddd;
+  border: 1px solid #ddd;
 }
 
 .wrapper-footer {
