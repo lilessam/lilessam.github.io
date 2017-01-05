@@ -3,7 +3,7 @@ layout: default
 ---
 
 <div class="posts">
-  {% for post in site.posts %}
+  {% for post in paginator.posts %}
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
@@ -15,4 +15,18 @@ layout: default
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
   {% endfor %}
+</div>
+
+<div id="blog-pagination">
+    <ul>
+        {% if paginator.previous_page %}
+        <li class="prev"><a href="{{paginator.previous_page_path}}"><i class="fa fa-arrow-left" aria-hidden="true"></i><span>Prev</span></a></li>
+        {% endif %}
+        {% if paginator.previous_page or paginator.next_page%}
+        <li class="separator"></li>
+        {% endif %}
+         {% if paginator.next_page %}
+        <li class="next"><a href="{{paginator.next_page_path}}"><span>Next</span><i class="fa fa-arrow-right" aria-hidden="true"></i></a></li>
+        {% endif %}
+    </ul>
 </div>

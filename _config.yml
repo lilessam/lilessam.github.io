@@ -84,3 +84,6 @@ exclude:
   - LICENSE
   - README.md
   - CNAME
+paginate: 1
+paginate_path: "page-:num"
+encoding:     "utf-8"
