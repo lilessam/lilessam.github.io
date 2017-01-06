@@ -7,7 +7,7 @@ layout: default
     <article class="post">
 
       <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-      <h4><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%B %e, %Y" }}   |   <i class="fa fa-comment" aria-hidden="true"></i> <a href="{{post.url}}/#disqus_thread">Loading Comments Count...</a></h4>
+      <h4><i class="fa fa-calendar" aria-hidden="true"></i> {{ post.date | date: "%B %e, %Y" }}   |   <i class="fa fa-comment" aria-hidden="true"></i> <a href="{{ site.baseurl }}{{ post.url }}#disqus_thread" class="comments-count">Loading Comments Count...</a></h4>
       <div class="entry" style="margin-bottom: 3%;">
         {{ post.excerpt | markdownify }}
       </div>
