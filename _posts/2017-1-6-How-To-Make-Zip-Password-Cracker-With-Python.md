@@ -96,9 +96,6 @@ if __name__ == '__main__':
 
 The final application code should be:
 ```Python
-#!/usr/bin/python
-# -*- coding: utf-8 -*-
-# Developed By Lil'Essam
 import optparse
 import zipfile
 import atexit
