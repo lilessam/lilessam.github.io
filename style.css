@@ -30,7 +30,6 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1;
   font-family: fira-sans,'Open Sans',sans-serif;
-  background-color: #eaeaea;
 }
 
 ol, ul {
@@ -199,16 +198,11 @@ pre {
 /*********************/
 .wrapper-masthead {
   margin-bottom: 50px;
-  background: #fff;
-  -webkit-box-shadow: 0px 1px 1px #000;
-  -moz-box-shadow: 0px 1px 1px #eee;
-  box-shadow: 0px 1px 1px #000;
-  border-bottom: 1px solid #e2e2e2;
-  box-shadow: 0 4px 19px #ccc;
 }
 
 .masthead {
   padding: 20px 0;
+  border-bottom: 1px solid #eee;
 }
 @media screen and (max-width: 640px) {
   .masthead {
@@ -292,20 +286,7 @@ nav a {
     color: #4183C4;
   }
 }
-.post {
-  background: #fff;
-  border-radius: 3px;
-  padding: 25px;
-  border-bottom: 1px solid #e2e2e2;
-  -webkit-box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.52);
-  -moz-box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.52);
-  box-shadow: 0px 3px 6px -2px rgba(0,0,0,0.52);
-}
-.post:hover {
-  -webkit-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.52);
-  -moz-box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.52);
-  box-shadow: 0px 3px 6px 1px rgba(0,0,0,0.52);
-}
+
 .posts > .post {
   padding-bottom: 2em;
 }
