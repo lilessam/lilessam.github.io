@@ -43,7 +43,7 @@ I highly recommend to install `Rainlab.Builder` plugin which is a powerful CRUD 
 
 
 #### Why I don't consider October a CMS?
-Simply because It's not a CMS. It's a powerful platform or framework which facilitate your job and makes you a perfect extendable plugins system, So if you're working on a big web application you can divide your application into modules.
+Simply because It's not a CMS. It's a powerful platform or framework which facilitates your job and makes you a perfect extendable plugins system, So if you're working on a big web application you can divide your application into modules.
 
 The CMS is just a plugin in October which even doesn't exist in fresh October installation. And sure you can make your own CMS or Blogging plugin yourself.
 
