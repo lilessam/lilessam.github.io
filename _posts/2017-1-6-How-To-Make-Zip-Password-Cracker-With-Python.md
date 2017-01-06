@@ -2,7 +2,7 @@
 layout: post
 title: How to make a zip password cracker with Python
 excerpt: "In this quick tutorial I'm gonna show you how to make a zip file password cracker using our beloved Python !"
-date: 2016-01-06
+date: 2016-01-07
 ---
 In this quick tutorial I'm gonna show you how to make a zip file password cracker using our beloved Python !
 If you have a `zip file` downloaded from a website called `www.domain.com` for example. The password of the file might be `domain.com`, `www.domain.com` or even `http://www.domain.com`. So There are many guesses. And you'll not be okay if you try them all manually. So the idea of our program to type guessing words in a file and it will use all the odds to unzip the file.
