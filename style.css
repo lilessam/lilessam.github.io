@@ -357,7 +357,7 @@ pre code {
     word-wrap: normal
 }
 code {
-  font-family: 'Bitstream Vera Sans Mono','Courier', monospace;
+  font-family: Menlo,Monaco,Consolas,"Courier New",monospace;
 }
 
 .highlight .c {
