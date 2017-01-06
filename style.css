@@ -29,6 +29,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   line-height: 1;
+  font-family: fira-sans,'Open Sans',sans-serif;
 }
 
 ol, ul {
@@ -112,6 +113,8 @@ h4 {
 
 p {
   margin: 15px 0;
+  color: #5e5e5e;
+  line-height: 1.8;
 }
 
 a {
