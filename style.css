@@ -28,10 +28,6 @@ footer, header, hgroup, menu, nav, section {
   display: block;
 }
 
-body {
-  line-height: 1;
-  font-family: fira-sans,'Open Sans',sans-serif;
-}
 
 ol, ul {
   list-style: none;
@@ -67,8 +63,9 @@ html {
 
 body {
   background: #fff;
-  font: 18px/1.4 Helvetica, Arial, sans-serif;
   color: #333;
+  line-height: 1;
+  font-family: fira-sans,'Open Sans',sans-serif;
 }
 
 .container {
