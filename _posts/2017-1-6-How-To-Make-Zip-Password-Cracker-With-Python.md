@@ -9,12 +9,12 @@ If you have a `zip file` downloaded from a website called `www.domain.com` for e
 
 First of all, we will include some modules like `optparse`, `zipfile`, `atexit`. And we will include `threading` method from `Thread` module.
 
-```Python
+{% highlight Python %}
 import optparse
 import zipfile
 import atexit
 from threading import Thread
-```
+{% endhighlight %}
 
 Then we will make a tiny function that unzips the file using `zipfile` module to call it whenever we want.
 
