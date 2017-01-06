@@ -18,19 +18,19 @@ from threading import Thread
 
 Then we will make a tiny function that unzips the file using `zipfile` module to call it whenever we want.
 
-```Python
+{% highlight Python %}
 def extract_it(zipfile, password):
     try:
         zipfile.extractall(pwd=password)
         print "[+] Password is: " + password + "\n" + "File is extracted successfully"
     except:
         pass
-```
+{% endhighlight %}
 
 Now in our Main function we will get the user parameters using `optparse`
 We need to get two parameters, one for our zip file and another for the passwords file.
 
-```Python
+{% highlight Python %}
 def main():
     parser = optparse.OptionParser("usage %prog "+\
 			"-z <zipfile> -d <dicctionary>")
@@ -39,11 +39,11 @@ def main():
     parser.add_option('-d', dest='dname', type='string',\
 				help='Specify passwords file')
     (options, arg) = parser.parse_args()
-```
+{% endhighlight %}
 
 Then we will check the parameters if the user did enter it correctly, and if not we will show him how to use the program.
 
-```Python
+{% highlight Python %}
 def main():
     parser = optparse.OptionParser("usage %prog "+\
 			"-z <zipfile> -d <dicctionary>")
@@ -55,11 +55,11 @@ def main():
     if (options.zname == None) | (options.dname == None):
     	print parser.usage
     	exit(0)
-```
+{% endhighlight %}
 
 Now if the parameters are right we will loop through the passwords file to try every guess and try to unzip the file using `extract_it` function.
 
-```Python
+{% highlight Python %}
 def main():
     parser = optparse.OptionParser("usage %prog "+\
 			"-z <zipfile> -d <dicctionary>")
@@ -81,18 +81,18 @@ def main():
     	password = line.strip('\n')
     	t = Thread(target=extract_it, args=(zFile, password))
     	t.start()
-```
+{% endhighlight %}
 
 At the end we will show the user a simple message using `atexit` module:
 
-```Python
+{% highlight Python %}
 def exit_handler():
     print "That's all I could do :(";
 
 atexit.register(exit_handler)
 if __name__ == '__main__':
 	main()
-```
+{% endhighlight %}
 
 And this is how to use the application: `Python ZipCracker.py -z file.zip -d passwords.txt`
 
