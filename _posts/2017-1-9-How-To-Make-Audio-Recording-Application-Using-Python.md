@@ -10,29 +10,30 @@ First of all we need a module called `pyaudio` to manage this process.
 
 We're going to use `Pip` to install the module. Make sure you set `pip` in your environment path variable.
 You can set it using this command:
-```Bash
+{% highlight Bash %}
 SET PATH=%PATH%;C:\Python27\Scripts
-```
+{% endhighlight %}
 Now execute this command to install `pyaudio` module:
-```Bash
+{% highlight Bash %}
 pip install pyaudio
-```
+{% endhighlight %}
 
 And now we're ready to go further.
 
 We're going to create a new python script and import `pyaudio` module and `wave` module which is
 already installed with Python.
-```Python
+{% highlight Python %}
 import pyaudio
 import wave
-```
+{% endhighlight %}
 Now we will define our basic variables.
-```Python
+{% highlight Python %}
 CHUNK = 1024
 FORMAT = pyaudio.paInt16
 CHANNELS = 2
 RATE = 44100
-```
+{% endhighlight %}
+
 I'm not a sounds expert but let me explain some of these variables.
 `CHUNK` is simply how many bytes a piece of sound will have. The chunk is like a buffer, so therefore each buffer will contain 1024 samples, which you can then either keep or throw away. We use CHUNKS of data, instead of a continuous amount of audio because of processing power. (Let's assume this was a continuous flow of data being received from a Microphone and is being recorded and saved) then it would just eat up the processor, thus causing potential crashes. In terms of Raspberry Pi / Arduino development (Where the RAM is very small) CHUNKING the data like this makes the stream flow easier and thus prevents memory leaks.
 
@@ -46,12 +47,12 @@ Anyway, That's all I could know about these variable. Let's continue coding the 
 
 The next thing we'll ask the user for the final output file name then we'll set it to a variable
 contains the name and the extension `wav`
-```Python
+{% highlight Python %}
 filename = raw_input('* Enter the output file name you want: ')
 WAVE_OUTPUT_FILENAME = filename + ".wav"
-```
+{% endhighlight %}
 Now we will initiat a `PyAudio` object to start recording.
-```Python
+{% highlight Python %}
 p = pyaudio.PyAudio()
 stream = p.open(format=FORMAT,
                 channels=CHANNELS,
@@ -59,10 +60,11 @@ stream = p.open(format=FORMAT,
                 input=True,
                 frames_per_buffer=CHUNK)
 print("* recording")
-```
+{% endhighlight %}
+
 Now we're making a list for the frames we're getting from the user. Then we will make an infinite loop to read the stream and append it to our frames list.
 And we'll use `except KeyboardInterrupt` so whenever the user press `CTRL+C` the loop will break.
-```Python
+{% highlight Python %}
 frames = []
 try:
     while True:
@@ -71,15 +73,15 @@ try:
 except KeyboardInterrupt:
     pass
 print("* done recording")
-```
+{% endhighlight %}
 Now we're going to stop the stream, close it and terminate `PyAudio` object.
-```Python
+{% highlight Python %}
 stream.stop_stream()
 stream.close()
 p.terminate()
-```
+{% endhighlight %}
 Then we will use `wave` module to create a new wav file and write the data we got into it like the following code.
-```Python
+{% highlight Python %}
 #creates a new wav file with the file name the user entered at the beginning
 wf = wave.open(WAVE_OUTPUT_FILENAME, 'wb')
 #sets the channels number to our channels variable we defined at the beginning
@@ -92,7 +94,7 @@ wf.setframerate(RATE)
 wf.writeframes(b''.join(frames))
 #closes the object
 wf.close()
-```
+{% endhighlight %}
 
 This script is available in my [__GitHub Repository__](https://github.com/lilessam/PyRecorder)
 
