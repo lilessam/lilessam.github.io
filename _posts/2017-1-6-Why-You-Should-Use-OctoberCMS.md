@@ -4,7 +4,7 @@ title: Why you should use OctoberCMS
 excerpt: "Let me introduce to you the best web technology I've ever used in my life.
 __OctoberCMS__ is a CMS built on Laravel 5.1. It started in May, 2014 But who gives a shit about its starting date?! Let's see the important parts.
 "
-date: 2016-01-06
+date: 2017-01-06
 ---
 
 [__OctoberCMS__][] is a CMS built on Laravel 5.1. It started in May, 2014 But who gives a shit about its starting date?! Let's see the important parts.

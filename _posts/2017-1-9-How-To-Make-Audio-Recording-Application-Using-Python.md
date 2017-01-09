@@ -3,7 +3,7 @@ layout: post
 title: How to make Audio Recording application using Python
 excerpt: "In this quick tutorial I'm gonna show you how to make a tiny Audio Recording script using Python.
 First of all we need a module called `pyaudio` to manage this process."
-date: 2016-01-09
+date: 2017-01-09
 ---
 In this quick tutorial I'm gonna show you how to make a tiny Audio Recording script using Python.
 First of all we need a module called `pyaudio` to manage this process.

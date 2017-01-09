@@ -5,7 +5,7 @@ excerpt: "It's awesome to see something on the web like GitHub Pages !
 It's been quite difficult to dive into Jekyll and GitHub pages. Through about 5 hours of concentration
 I faced problems installing a theme, problems with my domain DNS settings and problems with understanding
 how Jekyll and GitHub pages work."
-date: 2016-01-05
+date: 2017-01-05
 ---
 
 It's awesome to see something on the web like GitHub Pages !
